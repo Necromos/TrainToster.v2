@@ -16,8 +16,16 @@ Tabele:
 
 [HDATE] hd TIME NOT NULL //daty świąteczne
 
+[MYTRACKS] id_user FK(id_user), from FK(id_station), to FK(id_station)
+
 Przykład wywołania:
 
 Od Redy do Gdyni Cisowej o 7:00 -skrypt sprawdza jakiego kierunku szukamy, id Redy > id Cisowej więc szukamy w kierunku Tczewa (Slupsk id 0, Tczew id duże) -sprawdzamy jakich pociągów szukamy (obecna data, czy jest weekend lub święto) -szukamy odjeżdżających z Redy około 7:00 takie, dla których istnieje przyjazd do Cisowej i odpowiedni typ mają na TRUE
 
 Od Gdyni Głównej do Gdańska Oliwy 24.12.2012 na cały dzięń -sprawdzamy kierunek po id stacji -sprawdzamy, że 24.12 to dzień świąteczny -szukamy wszystkich pociągów które: –odjeżdżają z Gdyni Głównej –jadą w kierunku Tczewa –przyjeżdżają do Gdańska Oliwy –mają kolumnę hld = TRUE
+
+Strona MOJE TRASY:
+
+użytkownik szuka trasy, jeśli nie ma jej w tabeli MYTRACKS zostaje ona dodana
+na stronie Moje Trasy jest lista szukanych przez danego usera tras
+kliknięcie na daną trasę przenosi do wyszukiwarki połączeń z wpisaną daną trasą i obecną godziną
