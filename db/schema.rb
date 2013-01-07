@@ -11,6 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(:version => 20130107180308) do
 
   create_table "hdates", :force => true do |t|
@@ -30,6 +31,9 @@ ActiveRecord::Schema.define(:version => 20130107180308) do
   add_index "mytracks", ["from_id"], :name => "index_mytracks_on_from_id"
   add_index "mytracks", ["to_id"], :name => "index_mytracks_on_to_id"
   add_index "mytracks", ["user_id"], :name => "index_mytracks_on_user_id"
+=======
+ActiveRecord::Schema.define(:version => 20130107163201) do
+>>>>>>> 25b34bdd9a783596351210f62609983b04ac7bd5
 
   create_table "stations", :force => true do |t|
     t.string   "name",       :limit => 35, :null => false
@@ -56,6 +60,7 @@ ActiveRecord::Schema.define(:version => 20130107180308) do
     t.datetime "updated_at",              :null => false
   end
 
+<<<<<<< HEAD
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
     t.string   "encrypted_password",     :default => "", :null => false
@@ -75,4 +80,6 @@ ActiveRecord::Schema.define(:version => 20130107180308) do
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
   add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
 
+=======
+>>>>>>> 25b34bdd9a783596351210f62609983b04ac7bd5
 end
