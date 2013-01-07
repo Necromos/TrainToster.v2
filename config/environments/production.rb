@@ -1,10 +1,6 @@
 TrainTosterV2::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
-  # Initialize the rails application
-  ActiveSupport::Deprecation.silence 
-
-
   # Code is not reloaded between requests
   config.cache_classes = true
 
