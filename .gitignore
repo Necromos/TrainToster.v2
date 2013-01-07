@@ -15,4 +15,4 @@
 /tmp
 
 # Do usunięcia przed deploy
-/config/database.yml
+config/database.yml
