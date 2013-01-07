@@ -24,12 +24,14 @@ group :assets do
   # gem 'therubyracer'
 
   gem 'uglifier', '>= 1.0.3'
+
+  # View
+  gem 'compass-rails'
+  gem 'zurb-foundation'
 end
 
 
-# View
-gem 'compass-rails'
-gem 'zurb-foundation'
+
 
 # View req
 gem 'execjs'
