@@ -8,6 +8,7 @@ gem 'rails', '3.2.1'
 
 group :development, :test do
 	gem 'sqlite3'
+	gem 'thin'
 end
 group :production do
 	gem 'pg'
