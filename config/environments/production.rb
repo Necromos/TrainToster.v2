@@ -1,13 +1,8 @@
 TrainTosterV2::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
-  # Load the rails application
-  require File.expand_path('../application', __FILE__)
-
   # Initialize the rails application
-  ActiveSupport::Deprecation.silence do
-    Selfcare::Application.initialize!
-  end
+  ActiveSupport::Deprecation.silence 
 
 
   # Code is not reloaded between requests
