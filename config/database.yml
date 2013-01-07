@@ -24,7 +24,7 @@ production:
   encoding: unicode
   host: ec2-54-243-238-144.compute-1.amazonaws.com
   database: d98d938kesmahl
-  pool: 5
+  pool: 100
   timeout: 5000
   username: lvyrzrvsdqgfee
   password: Pqw7gV-Yn2C0WtsWlY8vmDIufq
