@@ -1,4 +1,5 @@
 class TrainsController < ApplicationController
+  before_filter :authenticate_user!, except: [:index, :show]
   # GET /trains
   # GET /trains.json
   def index
