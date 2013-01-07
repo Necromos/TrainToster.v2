@@ -11,7 +11,29 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
+<<<<<<< HEAD
+ActiveRecord::Schema.define(:version => 20130107180308) do
+
+  create_table "hdates", :force => true do |t|
+    t.time     "hd",         :null => false
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "mytracks", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "from_id"
+    t.integer  "to_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "mytracks", ["from_id"], :name => "index_mytracks_on_from_id"
+  add_index "mytracks", ["to_id"], :name => "index_mytracks_on_to_id"
+  add_index "mytracks", ["user_id"], :name => "index_mytracks_on_user_id"
+=======
 ActiveRecord::Schema.define(:version => 20130107163201) do
+>>>>>>> 25b34bdd9a783596351210f62609983b04ac7bd5
 
   create_table "stations", :force => true do |t|
     t.string   "name",       :limit => 35, :null => false
@@ -38,4 +60,26 @@ ActiveRecord::Schema.define(:version => 20130107163201) do
     t.datetime "updated_at",              :null => false
   end
 
+<<<<<<< HEAD
+  create_table "users", :force => true do |t|
+    t.string   "email",                  :default => "", :null => false
+    t.string   "encrypted_password",     :default => "", :null => false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          :default => 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.datetime "created_at",                             :null => false
+    t.datetime "updated_at",                             :null => false
+    t.string   "username"
+  end
+
+  add_index "users", ["email"], :name => "index_users_on_email", :unique => true
+  add_index "users", ["reset_password_token"], :name => "index_users_on_reset_password_token", :unique => true
+
+=======
+>>>>>>> 25b34bdd9a783596351210f62609983b04ac7bd5
 end
