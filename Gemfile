@@ -26,7 +26,23 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+
+# View
+gem 'compass-rails'
+gem 'zurb-foundation'
+
+# View req
+gem 'execjs'
 gem 'jquery-rails'
+
+# Auth
+gem 'devise'
+gem 'omniauth-facebook'
+gem 'omniauth-github'
+gem 'omniauth-twitter'
+
+# Serv
+gem 'thin'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
