@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>No:</b>
+  <%= @train.no %>
+</p>
+
+<p>
+  <b>Std:</b>
+  <%= @train.std %>
+</p>
+
+<p>
+  <b>Wkd:</b>
+  <%= @train.wkd %>
+</p>
+
+<p>
+  <b>Hld:</b>
+  <%= @train.hld %>
+</p>
+
+<p>
+  <b>Dir:</b>
+  <%= @train.dir %>
+</p>
+
+
+<%= link_to 'Edit', edit_train_path(@train) %> |
+<%= link_to 'Back', trains_path %>

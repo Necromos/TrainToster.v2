@@ -1,4 +1,8 @@
 TrainTosterV2::Application.routes.draw do
+  resources :stations
+
+  resources :trains
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
